@@ -23,18 +23,6 @@ public class CityService {
 
 	RestTemplate c = new RestTemplate();
 
-	//public City[] findByUF(Long uf) {
-	//	String url = "https://servicodados.ibge.gov.br/api/v1/localidades/estados/" + uf + "/municipios";
-	//	City[] responseEntity = c.getForObject(url, City[].class);
-	//	return responseEntity;
-	//}
-
-	//public City findById(Long id) {
-	//	String url = "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/" + id;
-	//	City responseEntity = c.getForObject(url, City.class);
-	//	return responseEntity;
-	//}
-
 	public City gravarUfLocal() {
 		
 		List<City> listCity = cityRepository.findAll();

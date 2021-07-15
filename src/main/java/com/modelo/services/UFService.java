@@ -18,19 +18,6 @@ public class UFService {
 	
 	RestTemplate c = new RestTemplate();	
 	
-	//public UF[] findAll() {
-	//	
-	//	String url = "https://servicodados.ibge.gov.br/api/v1/localidades/estados";	
-	//	UF[] responseEntity = c.getForObject(url, UF[].class);
-	//	return responseEntity;	
-	//}
-
-	//public UF findById(Long idUf) {
-	//	String url = "https://servicodados.ibge.gov.br/api/v1/localidades/estados/" + idUf;	
-	//	UF responseEntity = c.getForObject(url, UF.class);
-	//	return responseEntity;
-	//}
-	
 	public UF gravarUfLocal() {
 		List<UF> list = ufRepository.findAll();
 		if(list.size() < 27) {
